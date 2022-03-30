@@ -1,0 +1,54 @@
+{
+  "name": "sieve-of-eratosthenes-kata",
+  "version": "1.0.0",
+  "description": "The third Triptease coding challenge!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triptease/sieve-of-eratosthenes-kata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "verbose": true,
+    "testTimeout": 1000,
+    "transform": {
+      ".(ts|js)$": "ts-jest"
+    },
+    "testRegex": "\\.tests?\\.(js|ts)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true
+      }
+    },
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "modulePaths": [
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "^test/(.*)$": "<rootDir>/test/$1"
+    }
+  },
+  "homepage": "https://github.com/triptease/sieve-of-eratosthenes-kata#readme",
+  "dependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}
