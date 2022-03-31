@@ -33,4 +33,10 @@ describe('Sieve', () => {
         ]
         expect(primes(1000)).toEqual(expected)
     })
+
+
+    it('find primes up to big number', () => {
+        let result = primes(10000);
+        expect(result).toHaveLength(1229);
+    })
 })
