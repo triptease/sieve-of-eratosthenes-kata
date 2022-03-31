@@ -1,7 +1,7 @@
 import { primes } from "../src/sieve"
 
 describe('Sieve', () => {
-    it('no primes under two', () => {
+    xit('no primes under two', () => {
         const expected: number[] = []
         expect(primes(1)).toEqual(expected)
     })
@@ -32,5 +32,9 @@ describe('Sieve', () => {
             911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997,
         ]
         expect(primes(1000)).toEqual(expected)
+    })
+
+    it('limit is prime', () => {
+        expect(primes(100000).length).not.toEqual(1229)
     })
 })
